@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 210 100% 46%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* Pure black */
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 0%; /* Pure black */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 0%; /* Pure black */
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 0 0% 5%; /* Nearly black */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 5%; /* Nearly black */
+    --muted-foreground: 215 20.2% 75%;
+
+    --accent: 0 0% 5%; /* Nearly black */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 10%; /* Very dark gray */
+    --input: 0 0% 10%; /* Very dark gray */
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-primary/10;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    @apply tracking-tight text-balance leading-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+  
+  .animate-enter {
+    @apply animate-fade-in animate-scale-in;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/70 dark:bg-black/50 border border-white/20 dark:border-white/10 shadow-lg;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 ease-out hover:scale-105;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .apple-button {
+    @apply rounded-full bg-primary text-white font-medium py-3 px-6 hover:bg-primary/90 transition-colors;
+  }
+  
+  .section-title {
+    @apply text-3xl font-semibold mb-12 text-left dark:text-white;
+  }
+  
+  /* Dark mode texture background */
+  .dark body {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-color: black;
+  }
+  
+  /* Enhanced card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl;
+  }
+  
+  /* Page transitions */
+  .page-transition-enter {
+    @apply opacity-0 -translate-y-4;
+  }
+  
+  .page-transition-enter-active {
+    @apply opacity-100 translate-y-0 transition-all duration-300 ease-out;
+  }
+  
+  /* Modern card design */
+  .modern-card {
+    @apply rounded-xl overflow-hidden bg-white dark:bg-gray-900/40 shadow-md hover:shadow-xl border border-gray-100 dark:border-gray-800/50 transition-all duration-300;
+  }
+  
+  /* Elevated card with subtle shadow */
+  .elevated-card {
+    @apply bg-white dark:bg-gray-900/40 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] dark:shadow-[0_8px_20px_rgb(0,0,0,0.3)] transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_8px_25px_rgb(0,0,0,0.4)];
+  }
+}
