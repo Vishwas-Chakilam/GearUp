@@ -53,7 +53,15 @@ npm run dev
 
 ## 🎨 Screenshots  
 
-*(Add some UI screenshots here once available!)*  
+### 🏠 Home Page  
+![Home Page](https://github.com/Vishwas-Chakilam/GearUp/blob/main/Extra/Screenshot%202025-04-03%20191416.png)  
+
+### 📝 Reviews Page  
+![Reviews Page](https://github.com/Vishwas-Chakilam/GearUp/blob/main/Extra/Screenshot%202025-04-03%20191435.png)  
+
+### 📖 Guides Page  
+![Guides Page](https://github.com/Vishwas-Chakilam/GearUp/blob/main/Extra/Screenshot%202025-04-03%20191455.png)  
+
 
 ---
 
