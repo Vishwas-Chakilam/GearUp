@@ -38,7 +38,7 @@ Ensure you have the following installed before running the project:
 
 #### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/your-username/GearUp.git
+git clone https://github.com/Vishwas-Chakilam/GearUp.git
 cd GearUp
 ```
 
