@@ -10,7 +10,7 @@ interface AdminAuthContextType {
 const AdminAuthContext = createContext<AdminAuthContextType | undefined>(undefined);
 
 // Using a stronger password with a mix of uppercase, lowercase, numbers, and special characters
-const ADMIN_PASSWORD = "S3cur3P@ssw0rd!2024";
+const ADMIN_PASSWORD = "YOUR_PASSWORD";
 
 export function AdminAuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
