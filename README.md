@@ -19,7 +19,7 @@
 | Technology | Purpose |
 |------------|---------|
 | **React (Vite)** | Frontend UI |
-| **SQLite / PostgreSQL / MongoDB** | Database |
+| **SupaBase** | Database |
 | **Tailwind CSS** | Styling |
 
 ---
@@ -30,8 +30,7 @@
 
 Ensure you have the following installed before running the project:  
 
-- **Node.js** (for frontend)  
-- **Python** (for backend if using FastAPI/Django)  
+- **REACT** (for frontend)  
 - **Git** (for version control)  
 
 ### 🔹 Installation  
